@@ -22,7 +22,7 @@ function App() {
       <BrowserRouter>
         <RootLayout scrollRef={scrollRef}>
           {pageArr.map((item, idx) => (
-            <div ref={(tabRef) => (scrollRef.current[idx] = tabRef!)}>
+            <div ref={(tabRef) => (scrollRef.current[idx] = tabRef!)} key={idx}>
               {item}
             </div>
           ))}
