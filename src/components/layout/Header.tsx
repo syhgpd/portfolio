@@ -62,6 +62,7 @@ const Header = ({ scrollRef }: Props) => {
 
 const HeaderArea = styled.div`
   position: fixed;
+  z-index: 101 !important;
   > div {
     position: relative;
     width: 100%;
@@ -83,6 +84,7 @@ const HeaderWrap = styled.div`
   > p {
     line-height: 60px;
     cursor: pointer;
+    color: ${({ theme }) => theme.charcoal};
   }
   &.hide {
     transform: translateY(-80px);

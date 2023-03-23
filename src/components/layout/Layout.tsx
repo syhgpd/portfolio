@@ -1,6 +1,5 @@
 import React, { MutableRefObject } from "react";
 import Header from "./Header";
-import styled from "@emotion/styled";
 
 interface Props {
   children: React.ReactNode;
@@ -11,15 +10,9 @@ const RootLayout = ({ children, scrollRef }: Props) => {
   return (
     <>
       <Header scrollRef={scrollRef} />
-      <PageContainer>{children}</PageContainer>
+      {children}
     </>
   );
 };
-
-const PageContainer = styled.div`
-  > div {
-    height: 100vh;
-  }
-`;
 
 export default RootLayout;
