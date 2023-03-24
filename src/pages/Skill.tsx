@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import { useRef, useState } from "react";
 import Slider from "react-slick";
 import Tag from "../components/common/Tag";
+import Title from "../components/common/Title";
 import Carousel from "../components/skill/Carousel";
 import { SkillContent } from "../components/skill/content";
 
@@ -16,8 +17,7 @@ const Skill = () => {
 
   return (
     <SkillContainer>
-      <p>SKILL</p>
-      <h1>주로 사용하는 기술들이에요.</h1>
+      <Title page="SKILL" content="주로 사용하는 기술들이에요." />
       <div className="tagBox">
         {SkillContent.map((item, i) => (
           <Tag
@@ -36,17 +36,6 @@ const Skill = () => {
 
 const SkillContainer = styled.div`
   padding: 60px 15vw;
-  > p {
-    color: ${({ theme }) => theme.pink};
-    font-weight: 800;
-    font-size: 24px;
-  }
-  > h1 {
-    font-weight: 700;
-    font-size: 36px;
-    margin-top: 16px;
-    color: ${({ theme }) => theme.charcoal};
-  }
   .tagBox {
     display: flex;
     gap: 8px 12px;
