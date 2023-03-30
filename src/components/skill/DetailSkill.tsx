@@ -12,7 +12,7 @@ const DetailSkill = ({ title, content }: Props) => {
       <hr />
       <ul>
         {content.map((item) => (
-          <li>{item}</li>
+          <li key={item}>{item}</li>
         ))}
       </ul>
     </DetailSkillContainer>
@@ -20,6 +20,7 @@ const DetailSkill = ({ title, content }: Props) => {
 };
 
 const DetailSkillContainer = styled.div`
+  margin: 0 10px;
   background-color: ${({ theme }) => theme.lightPink};
   border-radius: 20px;
   padding: 32px;
@@ -31,6 +32,9 @@ const DetailSkillContainer = styled.div`
   > hr {
     margin: 12px 0;
     border: 0.5px solid ${({ theme }) => theme.gray700};
+  }
+  > ul {
+    line-height: 24px;
   }
 `;
 
