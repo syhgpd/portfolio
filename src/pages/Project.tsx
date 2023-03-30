@@ -23,6 +23,9 @@ const Project = () => {
           />
         ))}
       </PostContainer>
+      <p>
+        <i>*</i> 누르면 프로젝트의 상세한 정보를 볼 수 있어요.
+      </p>
     </ProjectContainer>
   );
 };
@@ -31,6 +34,14 @@ const ProjectContainer = styled.div`
   margin: 0 auto;
   width: 70vw;
   padding: 80px 0;
+  > p {
+    margin-top: 12px;
+    text-align: end;
+    color: ${({ theme }) => theme.gray900};
+    > i {
+      color: ${({ theme }) => theme.pink700};
+    }
+  }
 `;
 
 const PostContainer = styled.div`
