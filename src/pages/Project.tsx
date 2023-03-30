@@ -19,6 +19,7 @@ const Project = () => {
             skill={item.skill}
             content={item.content}
             part={item.part}
+            link={item.link}
           />
         ))}
       </PostContainer>
