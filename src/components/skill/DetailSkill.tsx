@@ -21,7 +21,7 @@ const DetailSkill = ({ title, content }: Props) => {
 
 const DetailSkillContainer = styled.div`
   margin: 0 10px;
-  background-color: ${({ theme }) => theme.lightPink};
+  background-color: ${({ theme }) => theme.pink300};
   border-radius: 20px;
   padding: 32px;
   height: 228px;

@@ -18,11 +18,11 @@ const TagWraaper = styled.div<{ isActive: boolean }>`
   padding: 4px 14px;
   font-size: 16px;
   background-color: ${({ isActive, theme }) =>
-    isActive ? theme.pink : theme.white};
+    isActive ? theme.pink500 : theme.white};
   color: ${({ theme }) => theme.white};
   border-radius: 20px;
-  color: ${({ isActive, theme }) => (isActive ? theme.white : theme.pink)};
-  border: 1px solid ${({ isActive, theme }) => isActive && theme.pink};
+  color: ${({ isActive, theme }) => (isActive ? theme.white : theme.pink500)};
+  border: 1px solid ${({ isActive, theme }) => isActive && theme.pink500};
 `;
 
 export default Tag;

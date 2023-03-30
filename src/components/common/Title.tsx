@@ -16,7 +16,7 @@ const Title = ({ page, content }: Props) => {
 
 const TitleContainer = styled.div`
   > p {
-    color: ${({ theme }) => theme.pink};
+    color: ${({ theme }) => theme.pink500};
     font-weight: 800;
     font-size: 24px;
   }
