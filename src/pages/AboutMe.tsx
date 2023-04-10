@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
+import { profile } from "../assets";
 import { SummaryContent } from "../components/aboutMe/content";
 import Title from "../components/common/Title";
 
@@ -8,7 +9,7 @@ const AboutMe = () => {
     <AboutMeContainer>
       <Title page="ABOUT ME" content="HELLO, HYE YEON👋🏻" />
       <ProfileBox>
-        <span style={{ backgroundColor: "black", height: "300px" }}></span>
+        <img src={profile} alt="프로필" />
         <div>
           <h1>
             사용자에게 <i>즐거움</i>과 <i>편리함</i>을 선사하는 개발자,
@@ -70,8 +71,13 @@ const ProfileBox = styled.div`
   border-radius: 20px;
   padding: 40px;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1.5fr 3fr;
   gap: 40px;
+  > img {
+    object-fit: contain;
+    width: 100%;
+    border-radius: 8px;
+  }
   > div {
     i {
       color: ${({ theme }) => theme.pink700};
@@ -92,6 +98,9 @@ const ProfileBox = styled.div`
   }
   @media (max-width: 1000px) {
     display: block;
+    > img {
+      margin-bottom: 20px;
+    }
   }
 `;
 
@@ -119,7 +128,6 @@ const SummaryBox = styled.div`
   p {
     line-height: 24px;
   }
-
   @media (max-width: 1000px) {
     display: flex;
     flex-direction: column;

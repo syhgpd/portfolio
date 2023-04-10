@@ -7,4 +7,5 @@ export { default as arrow } from "./skill/arrow.svg";
 export { default as appjam } from "./activity/appjam.jpg";
 export { default as eirene } from "./activity/eirene.jpeg";
 export { default as jeong } from "./activity/jeong.jpg";
+export { default as profile } from "./aboutMe/profile.jpeg";
 export { default as talkConcert } from "./activity/talk-concert.jpeg";
