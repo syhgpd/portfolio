@@ -24,7 +24,7 @@ const DetailSkillContainer = styled.div`
   background-color: ${({ theme }) => theme.pink300};
   border-radius: 20px;
   padding: 32px;
-  height: 228px;
+  min-height: 228px;
   > h1 {
     color: ${({ theme }) => theme.gray900};
     font-size: 24px;
