@@ -11,4 +11,4 @@ export { default as profile } from "./aboutMe/profile.jpeg";
 export { default as talkConcert } from "./activity/talk-concert.jpeg";
 export { default as intro1 } from "./intro/intro1.jpeg";
 export { default as intro2 } from "./intro/intro2.jpeg";
-export { default as intro3 } from "./intro/intro3.jpeg";
+export { default as intro3 } from "./intro/intro3.jpg";
