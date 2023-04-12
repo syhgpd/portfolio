@@ -17,6 +17,7 @@ const Tag = ({ children, isActive, onClick }: Props) => {
 const TagWraaper = styled.div<{ isActive: boolean }>`
   padding: 4px 14px;
   font-size: 16px;
+  user-select: none;
   background-color: ${({ isActive, theme }) =>
     isActive ? theme.pink500 : theme.white};
   color: ${({ theme }) => theme.white};
