@@ -10,6 +10,7 @@ const Intro = () => {
     infinite: true,
     autoplay: true,
     autoplaySpeed: 2000,
+    arrows: false,
   };
 
   return (
