@@ -54,14 +54,8 @@ const IntroContainer = styled.div`
     animation: fadein ease-in 0.75s;
     animation-fill-mode: forwards;
   }
-  .fadein.two {
-    animation-delay: 0.5s;
-  }
-  .fadein.three {
-    animation-delay: 1s;
-  }
-  .fadein.four {
-    animation-delay: 1.5s;
+  @media (max-width: 1160px) {
+    flex-direction: column;
   }
 `;
 
@@ -76,6 +70,34 @@ const TextBox = styled.div`
     font-size: 60px;
     color: ${({ theme }) => theme.gray900};
   }
+  .fadein.two {
+    animation-delay: 0.5s;
+  }
+  .fadein.three {
+    animation-delay: 1s;
+  }
+  .fadein.four {
+    animation-delay: 1.5s;
+  }
+  @media (max-width: 1160px) {
+    display: flex;
+    gap: 4px;
+    i {
+      font-weight: 500;
+    }
+    > h1 {
+      font-size: 20px;
+      height: 20px;
+      line-height: 20px;
+      font-weight: 400;
+    }
+    .fadein.two {
+      display: none;
+    }
+    .fadein.four {
+      animation-delay: 1s;
+    }
+  }
 `;
 
 const StyledSlider = styled(Slider)`
@@ -84,6 +106,11 @@ const StyledSlider = styled(Slider)`
   img {
     border-radius: 20px;
     object-fit: cover;
+  }
+  @media (max-width: 1160px) {
+    width: calc(100vw - 32px);
+    height: auto;
+    margin-top: 80px;
   }
 `;
 

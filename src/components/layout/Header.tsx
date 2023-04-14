@@ -68,6 +68,9 @@ const HeaderArea = styled.div`
     width: 100%;
     height: 80px;
   }
+  @media (max-width: 560px) {
+    display: none;
+  }
 `;
 
 const HeaderWrap = styled.div`
