@@ -14,10 +14,10 @@ const Activity = () => {
         <span></span>
         {ActivityContent.map((item) => (
           <Post
+            key={item.title}
             title={item.title}
             content={item.content}
             date={item.date}
-            img={item.img}
             tag={item.tag}
             link={item.link}
           />

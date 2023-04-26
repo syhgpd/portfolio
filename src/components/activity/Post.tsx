@@ -6,12 +6,11 @@ interface Props {
   title: string;
   content: string;
   date: string;
-  img: string;
   tag: string[];
   link: string;
 }
 
-const Post = ({ title, content, date, img, tag, link }: Props) => {
+const Post = ({ title, content, date, tag, link }: Props) => {
   return (
     <PostContainer>
       <Link to={link}>
